@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html, body {
+    height: 100%;
+}
+/* Placement */
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+    margin:0 auto;
+}
+
+.header, .footer {
+    flex: 0 0 auto;
+}
+
+/* Typografy */
+
+body {
+    font-family: sans-serif;
+    line-height: 1.5rem;
+    color: #444;
+    background-color: white;
+}
+
+.main{
+    background-color:#fefdf9;
+    border: 2px solid #ccc;
+}
+p, td, th, li, dd {
+    text-align: justify;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin:1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0.5em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}

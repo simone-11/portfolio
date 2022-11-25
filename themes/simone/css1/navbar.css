@@ -1,0 +1,16 @@
+.nav ul{
+    padding:0em;
+}
+
+.nav li{
+    margin:1em;
+    background-color:var(--light-blue)
+}
+.nav li:hover{
+    background-color:var(--green);
+    color:white;
+}
+
+.nav li a {
+    color:white;
+}
