@@ -1,0 +1,26 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $default-white;
+    border-left: $grey-thick-border;
+    border-right: $grey-thick-border;
+    
+    li {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        min-width: 8em;
+        min-height: 4em;
+        background-color: $bar-background-color;
+        text-align: center;
+    }
+    
+    li:hover {
+        background-color: #88c259;
+    }
+
+    li a {
+        color: $default-white;
+    }
+}

@@ -1,0 +1,19 @@
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: $black-thin-border;
+    background-color: $bar-background-color;
+}
+
+.footer a {
+    color: #222;
+    margin: 0.4em;
+    text-decoration: none;
+}
+
+.footer .social {
+    font-size: 2rem;
+    margin-top: 0.4em;
+}

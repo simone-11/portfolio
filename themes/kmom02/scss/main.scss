@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+
+ul {
+    padding-left: 1.5em;
+}
+
+.hidden {
+    display: none !important;
+}
+
+html,
+
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    max-width: 67rem;
+    margin: 0 auto;;
+}
+
+.main {
+    flex: 1 0 auto;
+    background-color: $default-white;
+    border-bottom: $grey-thick-border;
+    border-left: $grey-thick-border;
+    border-right: $grey-thick-border;
+}
