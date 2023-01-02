@@ -1,0 +1,113 @@
+
+.landingpage {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 2em 4em;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    'title'
+    'css'
+    'html'
+    'javascript'
+    'php'
+    'python'
+    'git'
+    'sqlite';
+
+    h1 {
+        font-size: 300%;
+        letter-spacing: 20px;
+        grid-area: title;
+    }
+}
+
+.kurs-box {
+    border: 1px solid $default-black;
+    min-height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    h2 {
+        background-color: rgba(126, 171, 202, 0.7);
+        margin: 0;
+    }
+
+    h2:hover {
+        background-color: #88c259;
+    }
+}
+
+.infopage {
+    display: grid;
+    gap: 1em 1em;
+}
+
+.css {
+    grid-area: css;
+    background-image: url('../../../assets/img/css.png');
+}
+
+.html {
+    grid-area: html;
+    background-image: url('../../../assets/img/html.jpg');
+}
+
+.javascript {
+    grid-area: javascript;
+    background-image: url('../../../assets/img/js.jpg');
+}
+
+.php {
+    grid-area: php;
+    background-image: url('../../../assets/img/php.png');
+}
+
+.python {
+    grid-area: python;
+    background-image: url('../../../assets/img/python.png');
+}
+
+.git {
+    grid-area: git;
+    background-image: url('../../../assets/img/git.png');
+    background-size: contain;
+}
+
+.sqlite {
+    grid-area: sqlite;
+    background-image: url('../../../assets/img/sqlite.png');
+    background-size: contain;
+}
+
+
+.info {
+    grid-column: 2;
+    grid-row: 1;
+    border: 1px solid $default-black;;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1;
+    border: 1px solid $default-black;
+    
+    ul {
+        list-style-type: none;
+    }
+}
+
+@media (min-width: 769px) {
+    .landingpage {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr 3fr 2fr 4fr 3fr 1fr;
+        grid-template-areas:
+        'title title title'
+        'css html html'
+        'javascript javascript php'
+        'python python python'
+        'git sqlite sqlite'
+        'git . .';
+    }
+}
